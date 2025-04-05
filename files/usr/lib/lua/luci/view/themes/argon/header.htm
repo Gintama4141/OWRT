@@ -39,7 +39,7 @@
 	-- Custom settings
 	local mode = 'normal'
 	local dark_css = fs.readfile('/www/luci-static/argon/css/dark.css')
-	local bar_color = '#3f5582'
+	local bar_color = '#5e72e4'
 	local primary, dark_primary, blur_radius, blur_radius_dark, blur_opacity
 	if fs.access('/etc/config/argon') then
 		primary = uci:get_first('argon', 'global', 'primary')
@@ -162,11 +162,12 @@
 						<div class="flex1">
 							<a class="showSide"></a>
 <tr>
-             <td><a href='/cgi-bin/luci/admin/network/network'><img src="<%=media%>/navbar/interface.png" width="35" height="35"></a></td>
+             <td><a href='/cgi-bin/luci/admin/services/mihomo''><img src="<%=media%>/navbar/mihomo.png" width="35" height="35"></a></td>
+             <td><a href='/cgi-bin/luci/admin/status/netmon'><img src="<%=media%>/navbar/netmon.png" width="35" height="35"></a></td>
              <td><a href='/cgi-bin/luci/admin/system/tinyfm'><img src="<%=media%>/navbar/tinyfm.png" width="35" height="35"></a></td>
-             <td><a href='/cgi-bin/luci/admin/services/openclash'><img src="<%=media%>/navbar/openclash.png" width="35" height="35"></a></td>
-             <td><a href='/cgi-bin/luci/admin/services/nikki'><img src="<%=media%>/navbar/nikki.png" width="35" height="35"></a></td>
-             <td><a href='/cgi-bin/luci/admin/modem/3ginfo-lite'><img src="<%=media%>/navbar/modem.png" width="35" height="35"></a></td>
+             <td><a href='/cgi-bin/luci/admin/modem/3ginfo-lite''><img src="<%=media%>/navbar/droidnet.png" width="35" height="35"></a></td>
+              <td><a href='/cgi-bin/luci/admin/network/network'><img src="<%=media%>/navbar/interface.png" width="35" height="35"></a></td>
+
       </tr>
 						</div>
 						<div class="status" id="indicators"></div>
@@ -179,11 +180,9 @@ function updatemenu(){1==document.getElementById("responsive-menu").checked?(doc
 <nav id='menu'>
   <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
   <ul>
+	<li><a href='/cgi-bin/luci/admin/status/overview'>Home</a></li>
     <li><a href='/cgi-bin/luci/admin/services/ttyd'>Terminal</a></li>
-    <li><a href='/cgi-bin/luci/admin/services/droidnet'>Droidnet</a></li>
-    <li><a href='/cgi-bin/luci/admin/status/netmon'>Netmon</a></li>
-	<li><a id="zash" target='_blank'>Zash</a></li>
-	<script type="text/javascript">document.getElementById("zash").setAttribute("href", "http://" + window.location.hostname + ":9090/ui/zashboard/",);</script>
+    <li><a href='/cgi-bin/luci/admin/services/watchdog'>Conn Monitor</a></li>
 	<li><a id="yacd" target='_blank'>Yacd</a></li>
 	<script type="text/javascript">document.getElementById("yacd").setAttribute("href", "http://" + window.location.hostname + ":9090/ui/yacd/",);</script>
   </ul>
@@ -213,3 +212,4 @@ function updatemenu(){1==document.getElementById("responsive-menu").checked?(doc
 					</noscript>
 
 					<div id="tabmenu" style="display:none"></div>
+     
