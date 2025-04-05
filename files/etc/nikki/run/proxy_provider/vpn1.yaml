@@ -1,6 +1,6 @@
 proxies:
 # ◉ⓌⓁⒼ ◉ⓌⓈ ◉ⓈⓃⒾ #
-- name: ID5TR
+- name: ID5TR-MAN
   # interface-name: wwan0
   server: ava.game.naver.com
   port: 443
