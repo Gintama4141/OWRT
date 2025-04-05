@@ -1,0 +1,83 @@
+proxies:
+  - name: First Cagayan 
+    server: quiz.int.vidio.com
+    port: 443
+    type: vless
+    uuid: 9ed0f660-2fd6-4016-a6df-95df20598658
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    servername: quiz.int.vidio.com.my-vpnvip.my.id
+    ws-opts:
+      path: /203.194.112.119-8443
+      headers:
+        Host: quiz.int.vidio.my-vpnvip.my.id
+    udp: true
+  - name: Amazon ID 
+    server: quiz.int.vidii.com
+    port: 443
+    type: vless
+    uuid: 9ed0f660-2fd6-4016-a6df-95df20598658
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    servername: quiz.int.vidio.com.my-vpnvip.my.id
+    ws-opts:
+      path: /43.218.77.16-443
+      headers:
+        Host: quiz.int.vidio.com.my-vpnvip.my.id
+    udp: true
+  - name: Leaseweb Asia
+    server: ava.game.naver.com
+    port: 443
+    type: trojan
+    password: 9ed0f660-2fd6-4016-a6df-95df20598658
+    skip-cert-verify: true
+    network: ws
+    sni: ava.game.naver.com.my-vpnvip.my.id
+    ws-opts:
+      path: /194.127.193.240-50791
+      headers:
+        Host: ava.game.naver.com.my-vpnvip.my.id
+    udp: true
+  - name: Cloudflare Warp
+    server: ava.game.naver.com
+    port: 443
+    type: trojan
+    password: 9ed0f660-2fd6-4016-a6df-95df20598658
+    skip-cert-verify: true
+    network: ws
+    sni: ava.game.naver.com.my-vpnvip.my.id
+    ws-opts:
+      path: /138.2.74.219-28616
+      headers:
+        Host: ava.game.naver.com.my-vpnvip.my.id
+    udp: true
+  - name: Amazon
+    server: ava.game.naver.com
+    port: 443
+    type: trojan
+    password: 9ed0f660-2fd6-4016-a6df-95df20598658
+    skip-cert-verify: true
+    network: ws
+    sni: ava.game.naver.com.my-vpnvip.my.id
+    ws-opts:
+      path: /54.169.229.188-443
+      headers:
+        Host: ava.game.naver.com.my-vpnvip.my.id
+    udp: true
+  - name: Green Floid
+    server: ava.game.naver.com
+    port: 443
+    type: trojan
+    password: 9ed0f660-2fd6-4016-a6df-95df20598658
+    skip-cert-verify: true
+    network: ws
+    sni: ava.game.naver.com.my-vpnvip.my.id
+    ws-opts:
+      path: /5.34.176.119-81
+      headers:
+        Host: ava.game.naver.com.my-vpnvip.my.id
+    udp: true
